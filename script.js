@@ -12,11 +12,14 @@ function addBookToLibrary(name, creator, length) {
     myLibrary.push(book);
 }
 
-function removeBookFromLibrary(name) {
-    let newLibrary = myLibrary.filter(book => book.title !== name)
+function removeBookFromLibrary(id) {
+    let newLibrary = myLibrary.filter(book => book.bookID !== id)
+    myLibrary = newLibrary;
 
     displayBooks();
 }
+
+
 
 const dialog = document.getElementById("book-dialog");
 const addButton = document.getElementById("add");
