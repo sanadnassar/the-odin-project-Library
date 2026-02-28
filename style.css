@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+#page {
+    display: grid;
+    grid-template-rows: 3fr 7fr;
+    height: 100vh;
+}
+
+.upper {
+    background-color: #626969;
+}
+
+.lower {
+    background-color: #FCFFFC;
+}
+
+.book-card {
+    padding:20px;
+    border: 1px solid;
+    margin-top: 5px;
+}
+
+#card {
+    display: flex;
+}
